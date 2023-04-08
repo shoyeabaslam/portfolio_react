@@ -1,0 +1,204 @@
+.about-container {
+    width: 100%;
+    height: 100%;
+    padding: 80px 20px 20px 10px;
+
+    h1 {
+        text-align: center;
+        font-family: "Alegreya", serif;
+        color: #EC2657;
+
+    }
+
+}
+
+.about-wrapper-class {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    @media screen and (max-width:900px) {
+        flex-direction: column;
+    }
+
+}
+
+.about-content {
+    flex: 1;
+    height: 100%;
+    padding: 10px;
+
+    h3 {
+        font-family: 'Crimson pro', serif;
+    }
+
+    p {
+        font-family: 'Crimson pro', serif;
+    }
+
+    ul {
+        padding-left: 30px;
+        padding-right: 8px;
+
+        li {
+            list-style: none;
+            margin-top: 15px;
+            font-family: 'Crimson pro', serif;
+
+        }
+
+        li::before {
+            content: "➤";
+            margin-right: 10px;
+            color: rgb(236, 38, 87);
+        }
+
+    }
+}
+
+.about-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width:900px) {
+        margin-top: 100px;
+    }
+
+    div {
+        .blob {
+            position: relative;
+
+            img {
+                width: 388px;
+                position: absolute;
+                left: -15%;
+                top: -55px;
+            }
+
+            .ui-ux-designer-floating-card {
+                position: absolute;
+                height: 40px;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+                border-radius: 10px;
+                left: 5%;
+                bottom: -20px;
+
+                p {
+                    margin: 0;
+                    font-family: 'Crimson pro', serif;
+                    color: #f0485c;
+                    @media screen and (max-width:570px) {
+                        font-size: 0.8rem;
+                    }
+
+                }
+                @media screen and (max-width:570px) {
+                    left: 18%;
+                    bottom: -33px;
+                }
+
+            }
+
+            .web-developer-floating-card {
+                position: absolute;
+                height: 40px;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+                border-radius: 10px;
+                left: -22%;
+                top: 7px;
+
+                p {
+                    margin: 0;
+                    font-family: 'Crimson pro', serif;
+                    color: #e0a762;
+                    @media screen and (max-width:570px) {
+                        font-size: 0.8rem;
+                    }
+                }
+
+                @media screen and (max-width:570px) {
+                    left: -13%;
+                    top: 10px;
+                }
+
+            }
+            .android-developer-floating-card {
+                position: absolute;
+                height: 40px;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+                border-radius: 10px;
+                right: -30%;
+                top: -20px;
+
+                p {
+                    margin: 0;
+                    font-family: 'Crimson pro', serif;
+                    color: #f67e64;
+                    @media screen and (max-width:570px) {
+                        font-size: 0.8rem;
+                    }
+                }
+                @media screen and (max-width:570px) {
+                    right: -16%;
+                    top: -50px;
+                }
+            }
+        }
+
+    }
+}
+
+.about-section-buttons {
+    display: flex;
+    justify-content: space-around;
+
+    button {
+        width: 170px;
+        height: 40px;
+        border: 1px solid #EC2657;
+        position: relative;
+        outline: none;
+        border-radius: 5px;
+        transition: all 0.3s ease-in;
+        background-color: white;
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            position: absolute;
+            font-family: "Alegreya", serif;
+            color: #EC2657;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            border-radius: 5px;
+
+            &:hover {
+                color: white;
+            }
+
+        }
+
+        &:hover {
+            background-color: #EC2657;
+            border: none;
+        }
+    }
+}
